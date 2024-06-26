@@ -1,0 +1,255 @@
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300&display=swap');
+
+ .map-img {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.index-btn {
+    margin: 10px;
+    position: absolute;
+    top: 4.5%;
+    left: 15.6%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 15px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    background-image: linear-gradient(to right, #D5966C 50px, #151515 5px);
+}
+
+.index-btn svg {
+    margin-right: 50px;    
+
+}
+.btn svg {
+    margin-left: 50px;
+    margin-right: -20px;
+}
+
+.index-btn:hover {
+    background: linear-gradient(to right, #151515 50px, #D5966C 5px);
+    cursor: pointer;
+
+}
+
+/* location section */
+.location-section {
+    display: flex;
+    background-color: #151515;
+    color: #ffffff;
+    max-width: 100%;
+    height: 548px;
+    flex-shrink: 0;
+}
+.location-section>div {
+    margin: 100px;
+}
+.location {
+    width: 350px;
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 900;
+    font-style: normal;
+    font-family: Big Shoulders Display;
+    text-transform: uppercase;
+}
+.place,
+.street-name,
+.open-time {
+    margin-bottom: 40px;
+    padding-left: 33%;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.place,
+.open-time {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.street-name {
+    color: #D5966C;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900px;
+    line-height: 32px;
+    font-family: Big Shoulders Display;
+}
+
+/* footer section */
+.footer-section {
+    background-color: #D5966C;
+    color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 244px;
+}
+
+
+.footer-head {
+    margin: 0;
+    margin-left: 6%;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.footer-body {
+    width: 430px;
+    font-size: 18px;
+    font-style: 'Outfit';
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.icons {
+    justify-content: space-between;
+    width: 280px;
+}
+
+.icons svg {
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.icons :hover {
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+/* mobile display */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .map-mob-img {
+        display: block;
+        width: 100%;
+    }
+
+    .map-desk-img,
+    .map-tab-img {
+        display: none;
+        
+    }
+    
+    /* location-section */
+    .location-section {
+        flex-direction: column;
+        height: 493px;
+        margin: 1px;
+    }
+
+    .location-section>div {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    
+
+    .location {
+        width: 343px;
+    }
+
+    .place {
+        width: 343px;
+
+    }
+
+    .place,
+    .street-name,
+    .open-time {
+        padding-left: 0.2px;
+    }
+        /* section-two display */
+    .footer-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 400px;
+        gap: 38px;
+    }
+
+    .footer-section>div {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .footer-body,
+    .footer-head {
+        width: fit-content;
+        justify-items: center;
+
+    }
+        /* section-two display */
+        .footer-section {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 400px;
+            gap: 38px;
+        }
+    
+        .footer-section>div {
+            margin: 10px;
+            padding: 10px;
+        }
+    
+        .footer-body,
+        .footer-head {
+            width: fit-content;
+            justify-items: center;
+    
+        }
+}
+
+
+/* tablets dispaly */
+@media (min-width: 767px) and (max-width: 1024px) {
+    .map-tab-img {
+        display: block;
+    }
+
+    .map-desk-img,
+    .map-mob-img {
+        display: none;
+    }
+    
+    
+    .location-section {
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+}
+@media (min-width: 769px) {
+    .map-desk-img {
+        display: block;
+    }
+
+    .map-tab-img,
+    .map-mob-img {
+        display: none;
+    }
+
+}
+
+
+
+
